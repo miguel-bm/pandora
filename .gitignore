@@ -1,5 +1,10 @@
 data/raw/hansen/*
 data/raw/earthenv/*
+data/raw/floods/*
+data/raw/mammals/*
+data/raw/nations/*
+data/raw/pastures/*
+data/raw/population/*
 aws_spaceapps_key.pem
 nasa.pem
 
