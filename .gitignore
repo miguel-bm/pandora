@@ -1,5 +1,6 @@
 data/raw/hansen/*
 data/raw/earthenv/*
+aws_spaceapps_key.pem
 nasa.pem
 
 # Exceptions
