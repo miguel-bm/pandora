@@ -1,0 +1,24 @@
+needleleaf:
+  - https://data.earthenv.org/consensus_landcover/without_DISCover/Consensus_reduced_class_1.tif
+evergreen_broadleaf:
+  - https://data.earthenv.org/consensus_landcover/without_DISCover/Consensus_reduced_class_2.tif
+deciduoud_broadleaf:
+  - https://data.earthenv.org/consensus_landcover/without_DISCover/Consensus_reduced_class_3.tif
+mixed_trees:
+  - https://data.earthenv.org/consensus_landcover/without_DISCover/Consensus_reduced_class_4.tif
+shrubs:
+  - https://data.earthenv.org/consensus_landcover/without_DISCover/Consensus_reduced_class_5.tif
+herbaceous:
+  - https://data.earthenv.org/consensus_landcover/without_DISCover/Consensus_reduced_class_6.tif
+cultivated:
+  - https://data.earthenv.org/consensus_landcover/without_DISCover/Consensus_reduced_class_7.tif
+flooded:
+  - https://data.earthenv.org/consensus_landcover/without_DISCover/Consensus_reduced_class_8.tif
+urban:
+  - https://data.earthenv.org/consensus_landcover/without_DISCover/Consensus_reduced_class_9.tif
+snow_ice:
+  - https://data.earthenv.org/consensus_landcover/without_DISCover/Consensus_reduced_class_10.tif
+barren:
+  - https://data.earthenv.org/consensus_landcover/without_DISCover/Consensus_reduced_class_11.tif
+open_water:
+  - https://data.earthenv.org/consensus_landcover/without_DISCover/Consensus_reduced_class_12.tif
