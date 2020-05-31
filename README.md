@@ -10,7 +10,8 @@ Predict - Protect - Pandora
 
 # Video
 
-(link)
+[Pandora Monitor Video](https://youtu.be/YaVTnUdz-U4)
+
 
 # Epidemic Emergence Monitor
 
