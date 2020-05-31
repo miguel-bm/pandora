@@ -71,4 +71,3 @@ Monitoring drivers of emergence is therefore of vital importance in order to pre
 - [Victor Terán](https://www.linkedin.com/in/victor-teran/) Founder and Senior UX Designer at On the User
 
 
-

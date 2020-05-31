@@ -8,7 +8,7 @@ import { addDataToMap } from "kepler.gl/actions";
 import useSwr from "swr";
 
 import MapCovid from './MapCovid.js'
-import MapForest from './MapForest.js'
+import MapProcessed from './MapProcessed.js'
 import MapMammals from './MapMammals.js'
 
 const reducers = combineReducers({
@@ -20,7 +20,7 @@ const store = createStore(reducers, {}, applyMiddleware(taskMiddleware));
 export default function App() {
   return (
     <Provider store={store}>
-      <MapCovid />
+      <MapProcessed />
     </Provider>
   );
 }
