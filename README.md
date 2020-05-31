@@ -101,7 +101,7 @@ Each of these drivers of emergence increases the risk of zoonotic disease transm
 
 ![EMM = Norm \left ( \left (X_1 + X_2 + X_3 + X_4  \right ) * F_{pop-density}\right )](https://render.githubusercontent.com/render/math?math=EMM%20%3D%20Norm%20%5Cleft%20(%20%5Cleft%20(X_1%20%2B%20X_2%20%2B%20X_3%20%2B%20X_4%20%20%5Cright%20)%20*%20F_%7Bpop-density%7D%5Cright%20))
 
-The image below shows the preliminary results from this risk factor calculated over the whole surface of the Earth. As we can see, it shows concentrated risk in areas such as the Ganges Basin, Southeast Asia, Nigeria, Tanzania, Uganda, Central Europe, and Central America.
+The image below shows the preliminary results from this risk factor calculated over the whole surface of the Earth. As we can see, it shows concentrated risk in areas such as the Ganges Basin, Southeast Asia, China, Nigeria, Tanzania, Uganda, Central Europe, and Central America.
 
 ![Figure 1](data/processed/factors/zoonotic_factor.jpg)
 
