@@ -15,16 +15,16 @@ Predict - Protect - Pandora
 # Epidemic Emergence Monitor
 
 
-**Could we have predicted the COVID-19 outbreak?** Perhaps we were only one step away. 60% of the roughly 400 emerging infectious diseases are **zoonotic** (a pathogen that has jumped from a non-human animal to a human), and this figure is just increasing. COVID-19 has reminded the world we are just one step away from being caught by microbial evolution. 
+**Could we have predicted the COVID-19 outbreak?** Perhaps we were only one step away. 60% of the roughly 400 emerging infectious diseases are **zoonotic** i.e., those pathogens that have jumped from a non-human host to a human one, and this figure is just increasing. COVID-19 has reminded the world we are just one step away from being caught by microbial evolution. 
 
-Historically, the emergence of new epidemics has caused significant human and socioeconomic burden. Scientific evidence (Morse, 2004; Morse et al., 2008, Allen et al., 2012) provides insights into the factors that influence the epidemic emergence, the so-called drivers of emergence, and alerts on the impact of anthropogenic modifications on the environment. The scientific consensus agrees on the rather urgent need of developing a tool able to strengthen the prediction of potential upcoming epidemics: *‘These vulnerabilities emphasise the need for a systematic, pre-emptive approach that aims to prevent the spread or even the initial emergence of pandemics’* (Morse et al., 2012. The Lancet). 
+Historically, the emergence of new epidemics has caused significant human and socioeconomic burden. Scientific evidence (Morse, 2004; Morse et al., 2012, Allen et al., 2017) provides insights into the factors that influence the epidemic emergence, the so-called drivers of emergence, and alerts on the impact of anthropogenic modifications on the environment. The scientific consensus agrees on the rather urgent need of developing a tool able to strengthening the prediction of potential upcoming epidemics: *‘These vulnerabilities emphasise the need for a systematic, pre-emptive approach that aims to prevent the spread or even the initial emergence of pandemics’* (Morse et al., 2012. The Lancet). 
 
 Pandora team has engineered the **Epidemic Emergence Monitor** bolstered by the principle by which outbreaks prediction is the best protection. 
 
 
 # The Challenge
 
-A successful **model for epidemics prediction** should take into consideration how pathogens evolve to escape from their natural hosts and colonising human beings. The emergence of an epidemic undergoes three stages: 
+A successful **model for epidemics prediction** should take into consideration how pathogens evolve to escape from their natural hosts and colonise human beings. The emergence of an epidemic undergoes three stages: 
 1. In the first stage, the pathogen, i.e., a virus, bacterium, parasite or fungi, is held into its primary host in nature. In the aims of clarity, this explanation will only address viruses and its features in regards to potential epidemic emergence. Stage 1 is mainly studied by branches of Biology, such as Molecular or Cell Biology, Evolution, and Biochemistry. Eventually, the pathogen can jump between species by acquiring or re-specialising the molecular machinery that allows it to colonize new hosts. 
 2. The process by which the contagion context varies from no human infection to a localised human infection is called introduction and gives rise to stage 2. Depending on the viral ability for a sustained infection in humans and the contact frequency such humans have within the virus, the contagion curve can expand in a process called dissemination. 
 3. The rapidity and efficiency of the process relies upon factors that determine the sustainability of the infection. Once the virus is disseminated, contagion context moves to stage 3 where large population groups are infected, there is widespread transmission. To which extent this phenomena of global dissemination can occur depends on the host immunity status, age and other genetic factors. 
@@ -35,7 +35,7 @@ The key steps in the progression of contagion are the introduction (stage 1 to s
 
 However, there is scientific evidence that provides insight into two important facts to understanding the complexity of the problem. **50% of the approx. 1000 species of livestock and pets’ pathogens are zoonotic**, which means the species barrier between these and humans can be systematically breached and therefore humans can become infected. Secondly,  50% of the human pathogens can infect other vertebrates, mainly mammalian and avian species. Such figures indicate that around 1000 human helminths, 70% protozoa, 50% bacteria, 40% fungi and 80% of human viruses are zoonotic. 
 
-Invertebrates play a role as reservoirs, vectors, or as part of the life cycle of certain parasites.  It is important to notice that zoonotic pathogens, or those which became so, can transfer from animals to humans but this is not the only direction of the contagion. Potentially, humans can transfer the virus to animals, and animals can infect other animals before going back to infect humans. This feature allows for quicker evolution and eventually enhanced pathogenicity. Out of the approx. 400 emerging pathogens, only 100 (25%) can infect humans exclusively, and so specialisation is not widespread. Over 60 % of these emerging pathogens are zoonotic, and the remaining 15% is not yet determined whether they may or may not infect humans as well. The proportion will depend on the number of new discoveries but also and fundamentally on the capacity to exploit new routes of colonization and transmission.
+Invertebrates play a role as reservoirs, vectors, or as part of the life cycle of certain parasites.  It is important to notice that zoonotic pathogens, or those which became so, can transfer from animals to humans but this is not the only direction of the contagion. Potentially, humans can transfer the virus to animals, and animals can infect other animals before going back to infect humans. This feature allows for quicker evolution and eventually enhanced pathogenicity. Out of the approx. 400 emerging pathogens, only 100 (25%) can infect humans exclusively, and so specialisation is not highly widespread. Over 60 % of these emerging pathogens are zoonotic, and the remaining 15% is not yet determined whether they may or may not infect humans as well. The proportion will depend on the number of new discoveries but also and fundamentally on the capacity to exploit new routes of colonization and transmission.
 
 
 ## Stages of the disease
@@ -57,7 +57,7 @@ Pandora has developed the Epidemic Emergence Monitor (EEM). EEM integrates space
 
 EEM focuses on the progression from introduction of a pathogen to its dissemination globally (stage 1 progression to stage 3, either in the presence or absence of stage 2). It leaves behind stage 1 as Biology appropriately studies this and stage 3 as how the pathogens disseminate globally is deeply studied with various and precise mathematical models. The gap in the state of the art is therefore in the transition from one to another, coincidentally, where drivers of emergence matter particularly. In that regard, EEM integrates data sources that gather positional information on key drivers of emergence such as deforestation, land use, urban and rural clusters, etc. The underlying principle to incorporating the drivers of emergence is the fundamental base of epidemic emergence: if natural barriers are removed or significantly modified due to the anthropogenic effect (extensive fires, deforestation, land repurposing, massive farming, etc), this allows primary hosts to become closer to humans and eventually, should selective pressure, genetic drift or further adaptation allows so, the pathogen can colonize humans: a new potential epidemic can emerge. 
 
-Monitoring drivers of emergence is therefore of vital importance in order to predict the appearance of new epidemies which can eventually become pandemics.  
+Monitoring drivers of emergence is therefore of vital importance in order to predict the appearance of new epidemics which can eventually become pandemics.  
 
 
 # PANDORA MONITOR
@@ -66,7 +66,7 @@ Monitoring drivers of emergence is therefore of vital importance in order to pre
 
 # The Team
 
-- [Andrea Martos](https://www.linkedin.com/in/andrea-martos-esteban/?target=_blank), PhDc in Biochemistry - University of Cambridge 
+- [Andrea Martos](https://www.linkedin.com/in/andrea-martos-esteban/), PhDc in Biochemistry - University of Cambridge 
 - [Carlos Bort](https://www.linkedin.com/in/carlosbort/), Founder & Data scientist at xplore.ai
 - [Miguel Blanco](https://www.linkedin.com/in/mblancom/), MSc Aerospace Engineering and Data Scientist
 - [Pablo Talavante](https://www.linkedin.com/in/ptalavante/), Machine Learning Engineer
