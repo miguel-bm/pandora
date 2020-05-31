@@ -62,7 +62,7 @@ The underlying principle to incorporating the drivers of emergence is the fundam
 Monitoring drivers of emergence is therefore of vital importance in order to predict the appearance of new epidemics which can eventually become pandemics.  
 
 
-## The Equations
+## The Model
 
 The following expressions have been created in an attempt to model the effect of the aforementioned drivers of emergence.
 
@@ -97,9 +97,13 @@ Then, four distinct drivers of emergence have been modelled from the local conve
 
 ![X_{4} = Norm \left( \left (F_{fires} + F_{floods}  \right ) \cdot F_{demographic}  \right )                     ](https://render.githubusercontent.com/render/math?math=X_%7B4%7D%20%3D%20Norm%20%5Cleft(%20%5Cleft%20(F_%7Bfires%7D%20%2B%20F_%7Bfloods%7D%20%20%5Cright%20)%20%5Ccdot%20F_%7Bdemographic%7D%20%20%5Cright%20)%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20)
 
-Each of these drivers of emergence increases the risk of zoonotic disease transmission from mammals to humans. Since a higher local human population also multiplies the chances of any single transmission ocurring, this has been added in the overall risk factor.
+Each of these drivers of emergence increases the risk of zoonotic disease transmission from mammals to humans. Since a higher local human population also multiplies the chances of any single transmission ocurring, this has been added in the overall EMM risk factor.
 
-![Z = Norm \left ( \left (X_1 + X_2 + X_3 + X_4  \right ) * F_{pop-density}\right )](https://render.githubusercontent.com/render/math?math=Z%20%3D%20Norm%20%5Cleft%20(%20%5Cleft%20(X_1%20%2B%20X_2%20%2B%20X_3%20%2B%20X_4%20%20%5Cright%20)%20*%20F_%7Bpop-density%7D%5Cright%20))
+![EMM = Norm \left ( \left (X_1 + X_2 + X_3 + X_4  \right ) * F_{pop-density}\right )](https://render.githubusercontent.com/render/math?math=EMM%20%3D%20Norm%20%5Cleft%20(%20%5Cleft%20(X_1%20%2B%20X_2%20%2B%20X_3%20%2B%20X_4%20%20%5Cright%20)%20*%20F_%7Bpop-density%7D%5Cright%20))
+
+The image below shows the preliminary results from this risk factor calculated over the whole surface of the Earth. As we can see, it shows concentrated risk in areas such as the Ganges Basin, Southeast Asia, Nigeria, Tanzania, Uganda, Central Europe, and Central America.
+
+![Figure 1](data/processed/factors/zoonotic_factor.jpg)
 
 
 # PANDORA MONITOR
