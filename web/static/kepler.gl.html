@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="style.css">
 
         <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
-
+        <link href="https://fonts.googleapis.com/css2?family=Atomic+Age&display=swap" rel="stylesheet">
         <!--MapBox css-->
         <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v1.1.1/mapbox-gl.css" rel="stylesheet">
 
@@ -72,6 +72,7 @@
         </script>
       </head>
       <body>
+      <div class="back">
         <div class="introduccion">
           PANDORA
           <div class="explicacion">
@@ -86,6 +87,7 @@
             <!-- Kepler.gl map will be placed here-->
           </div>
         </div>
+      </div>
         <!-- Load our React component. -->
         <script>
           /* Validate Mapbox Token */
@@ -155,8 +157,8 @@
             return function App() {
               var rootElm = react.useRef(null);
               var _useState = react.useState({
-                width: window.innerWidth,
-                height: window.innerHeight
+                width: window.innerWidth ,
+                height: window.innerHeight,
               });
               var windowDimension = _useState[0];
               var setDimension = _useState[1];
@@ -169,12 +171,12 @@
               }, []);
               return react.createElement(
                 'div',
-                {style: {position: 'absolute', left: 0, width: '100vw', height: '100vh'}},
+                {style: {position: 'absolute', left: 0, width: '90vw', height: '90vh'}},
                 LogoSvg(),
                 react.createElement(keplerGl.KeplerGl, {
                   mapboxApiAccessToken: mapboxToken,
                   id: "map",
-                  width: windowDimension.width,
+                  width: windowDimension.width-100,
                   height: windowDimension.height
                 })
               )
@@ -219,6 +221,8 @@
               }
             }));
           }(KeplerGl, store))
+
+        document.getElementsByClassName("mapboxgl-ctrl").parentNode.removeChild(element)
         </script>
       </body>
     </html>
