@@ -8,7 +8,7 @@ data/raw/population/*
 aws_spaceapps_key.pem
 ssh_to_aws.sh
 .vs_code
-.DS_store
+.DS_Store
 nasa.pem
 
 # Exceptions
