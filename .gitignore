@@ -8,8 +8,8 @@ data/raw/population/*
 aws_spaceapps_key.pem
 ssh_to_aws.sh
 .vs_code
-.DS_Store
-nasa.pem
+./.DS_Store
+./nasa.pem
 
 # Exceptions
 !data/raw/hansen/.gitkeep
