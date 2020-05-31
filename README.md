@@ -55,9 +55,10 @@ EEM focuses on the progression from introduction of a pathogen to its disseminat
 
 - [Andrea Martos](https://www.linkedin.com/in/andrea-martos-esteban/?target=_blank), PhDc in Biochemistry - University of Cambridge 
 - [Carlos Bort](https://www.linkedin.com/in/carlosbort/), Founder & Data scientist at xplore.ai
-- [Miguel Blanco](https://www.linkedin.com/in/mblancom/), Aerospace Engineer and Data Scientist
+- <a href="https://www.linkedin.com/in/carlosbort/" target="_blank">Carlos Bort</a>
+- [Miguel Blanco](https://www.linkedin.com/in/mblancom/), MSc Aerospace Engineering and Data Scientist
 - [Pablo Talavante](https://www.linkedin.com/in/ptalavante/), Machine Learning Engineer
-- [Victor Terán](https://www.linkedin.com/in/victor-teran/), Senior UX Designer & Brand Strategist
+- [Victor Terán](https://www.linkedin.com/in/victor-teran/) Founder and Senior UX Designer at On the User
 
 
 
