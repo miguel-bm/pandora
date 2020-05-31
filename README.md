@@ -2,7 +2,9 @@
 
 Repository for [Team Pandora](https://covid19.spaceappschallenge.org/challenges/covid-challenges/human-factors/teams/pandora/project) at the Space Apps COVID-19 Challenge (May 2020).
 
-![Figure 1](img/NASA_001.png)
+Predict - Protect - Pandora
+
+![Figure 1](img/NASA_001.jpeg)
 
 # Video
 
@@ -25,7 +27,7 @@ A successful **model for epidemics prediction** should take into consideration h
 2. The process by which the contagion context varies from no human infection to a localised human infection is called introduction and gives rise to stage 2. Depending on the viral ability for a sustained infection in humans and the contact frequency such humans have within the virus, the contagion curve can expand in a process called dissemination. 
 3. The rapidity and efficiency of the process relies upon factors that determine the sustainability of the infection. Once the virus is disseminated, contagion context moves to stage 3 where large population groups are infected, there is widespread transmission. To which extent this phenomena of global dissemination can occur depends on the host immunity status, age and other genetic factors. 
 
-![Figure 1](img/NASA_002.png)
+![Figure 1](img/NASA_002.jpeg)
 
 The key steps in the progression of contagion are the introduction (stage 1 to stage 2) and dissemination (stage 2 to stage 3). When addressing the introduction step, the model needs to address the fundamental role of pathogens biology in emergence. It refers to the number and the kind of pathogens people are exposed to but also which and how these can successfully cross the species barrier and further counteract humans immunity. Given the obvious rapid variation of these parameters, it is challenging to monitor every single one of them and a complete compilation of pathogens that have been able to cross the species barrier is not available. 
 
@@ -38,7 +40,7 @@ Invertebrates play a role as reservoirs, vectors, or as part of the life cycle o
 
 Another important factor to take into consideration is the nature of stage 2 in epidemic emergence. Certain viruses do not require undergoing stage 2 because their capacity to infect humans becomes very successful. In such cases, once the virus has evolved to colonise humans, the contagion spreads rapidly instead of remaining in localised hotspots for a period.  It was the case for ebola virus versus SARS-CoV-2, where the former efficiently acquired the ability to infect humans and did not remain in a single contagion area for long. (FIG. 2)
 
-![Figure 1](img/NASA_003.png)
+![Figure 1](img/NASA_003.jpeg)
 
 # The Solution
 
@@ -49,7 +51,7 @@ The drivers of emergence can be classified into three groups: ecological, enviro
 Pandora has developed the Epidemic Emergence Monitor (EEM). EEM integrates space-based assets from NASA, ESA, CNES, as well as land-based infrastructure to monitor the drivers of emergence, those parameters affecting the risk of epidemic emergence across the globe. EEM constitutes a bespoke resource for improving public health by enabling collaboration between governments, corporations, and researchers.
 
 
-![Figure 1](img/NASA_004.png)
+![Figure 1](img/NASA_004.jpeg)
 
 EEM focuses on the progression from introduction of a pathogen to its dissemination globally (stage 1 progression to stage 3, either in the presence or absence of stage 2). It leaves behind stage 1 as Biology appropriately studies this and stage 3 as how the pathogens disseminate globally is deeply studied with various and precise mathematical models. The gap in the state of the art is therefore in the transition from one to another, coincidentally, where drivers of emergence matter particularly. In that regard, EEM integrates data sources that gather positional information on key drivers of emergence such as deforestation, land use, urban and rural clusters, etc. The underlying principle to incorporating the drivers of emergence is the fundamental base of epidemic emergence: if natural barriers are removed or significantly modified due to the anthropogenic effect (extensive fires, deforestation, land repurposing, massive farming, etc), this allows primary hosts to become closer to humans and eventually, should selective pressure, genetic drift or further adaptation allows so, the pathogen can colonize humans: a new potential epidemic can emerge. 
 
@@ -59,8 +61,6 @@ Monitoring drivers of emergence is therefore of vital importance in order to pre
 # PANDORA MONITOR
 
 ![Figure 1](img/NASA_005.jpeg)
-
-Predict - Protect - Pandora
 
 # The Team
 
