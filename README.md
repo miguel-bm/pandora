@@ -6,7 +6,7 @@ Predict - Protect - Pandora
 
 ![Figure 1](img/NASA_001.jpeg)
 
-**Website:** [pandoramonitor.com](https://www.pandoramonitor.com)
+**Website:** [pandoramonitor.com](http://www.pandoramonitor.com)
 
 # Video
 
@@ -113,7 +113,7 @@ The image below shows the preliminary results from this risk factor calculated o
 
 ![Figure 1](img/NASA_005.jpeg)
 
-**Website:** [pandoramonitor.com](https://www.pandoramonitor.com)
+**Website:** [pandoramonitor.com](http://www.pandoramonitor.com)
 
 # The Team
 
