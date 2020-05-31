@@ -6,7 +6,10 @@ data/raw/nations/*
 data/raw/pastures/*
 data/raw/population/*
 aws_spaceapps_key.pem
-nasa.pem
+ssh_to_aws.sh
+.vs_code
+./.DS_Store
+./nasa.pem
 
 # Exceptions
 !data/raw/hansen/.gitkeep

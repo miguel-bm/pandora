@@ -10,7 +10,8 @@ Predict - Protect - Pandora
 
 # Video
 
-(link)
+[Pandora Monitor Video](https://youtu.be/YaVTnUdz-U4)
+
 
 # Epidemic Emergence Monitor
 
@@ -46,7 +47,7 @@ Another important factor to take into consideration is the nature of stage 2 in 
 
 # The Solution
 
-Epidemic risk is therefore a function of the virus/host contact frequency and its successful adaptation to humans in a sustained manner. A successful adaptation to humans depends upon the virus/host relatedness, the virus’ host range and plasticity, the patterns of host/virus coevolution, and the predicted virulence in humans. Moreover, the contact frequency depends not only on the mere physical proximity between the viral and human environments, but on how the barriers preventing contagion are breached or strengthened. The concept ‘microbial traffic’ accounts for the process by which microbes disseminate from isolated groups into larger populations. The greater is the microbial traffic, the higher the risk for disease emergence and potential epidemics. The factors influencing the extent of the microbial traffic which eventually can lead to epidemic emergence are called drivers of disease emergence and 
+Epidemic risk is therefore a function of the virus/host contact frequency and its successful adaptation to humans in a sustained manner. A successful adaptation to humans depends upon the virus/host relatedness, the virus’ host range and plasticity, the patterns of host/virus coevolution, and the predicted virulence in humans. Moreover, the contact frequency depends not only on the mere physical proximity between the viral and human environments, but on how the barriers preventing contagion are breached or strengthened. The concept ‘microbial traffic’ accounts for the process by which microbes disseminate from isolated groups into larger populations. The greater is the microbial traffic, the higher the risk for disease emergence and potential epidemics. The factors influencing the extent of the microbial traffic which eventually can lead to epidemic emergence are called drivers of disease emergence.
 
 The drivers of emergence can be classified into three groups: ecological, environmental and demographic. These place human beings closer to the natural host for an unknown zoonotic virus and enable virus spreading. As these factors are increasingly prevalent, zoonotic epidemics will keep appearing with massive economic and human burden, there is a need to monitor the variance of factors and determinants of disease emergence. 
 
@@ -55,14 +56,62 @@ Pandora has developed the Epidemic Emergence Monitor (EEM). EEM integrates space
 
 ![Figure 1](img/NASA_004.jpeg)
 
-EEM focuses on the progression from introduction of a pathogen to its dissemination globally (stage 1 progression to stage 3, either in the presence or absence of stage 2). It leaves behind stage 1 as Biology appropriately studies this and stage 3 as how the pathogens disseminate globally is deeply studied with various and precise mathematical models. The gap in the state of the art is therefore in the transition from one to another, coincidentally, where drivers of emergence matter particularly. In that regard, EEM integrates data sources that gather positional information on key drivers of emergence such as deforestation, land use, urban and rural clusters, etc. The underlying principle to incorporating the drivers of emergence is the fundamental base of epidemic emergence: if natural barriers are removed or significantly modified due to the anthropogenic effect (extensive fires, deforestation, land repurposing, massive farming, etc), this allows primary hosts to become closer to humans and eventually, should selective pressure, genetic drift or further adaptation allows so, the pathogen can colonize humans: a new potential epidemic can emerge. 
+EEM focuses on the progression from introduction of a pathogen to its dissemination globally (stage 1 progression to stage 3, either in the presence or absence of stage 2). It leaves behind stage 1 as Biology appropriately studies this and stage 3 as how the pathogens disseminate globally is deeply studied with various and precise mathematical models. The gap in the state of the art is therefore in the transition from one to another, coincidentally, where drivers of emergence matter particularly. In that regard, EEM integrates data sources that gather positional information on key drivers of emergence such as deforestation, land use, urban and rural clusters, etc. 
+
+The underlying principle to incorporating the drivers of emergence is the fundamental base of epidemic emergence: if natural barriers are removed or significantly modified due to the anthropogenic effect (extensive fires, deforestation, land repurposing, massive farming, etc), this allows primary hosts to become closer to humans and eventually, should selective pressure, genetic drift or further adaptation allow it, the pathogen can colonize humans: a new potential epidemic can emerge. 
 
 Monitoring drivers of emergence is therefore of vital importance in order to predict the appearance of new epidemics which can eventually become pandemics.  
+
+
+## The Model
+
+The following expressions have been created in an attempt to model the effect of the aforementioned drivers of emergence.
+
+*Note: all input factors have been feature-scaled from 0 to 1.*
+
+First, the overall influence of demographic pressures has been captured in the following factor:
+
+![F_{demographic} = Norm\left (\left(1 + 5*F_{urban} \right) \cdot \left(1 + 2*F_{wet-markets} \right) \cdot \sqrt{\dfrac{F_{pop-density}}{F_{GDP}}}  \right )](https://render.githubusercontent.com/render/math?math=F_%7Bdemographic%7D%20%3D%20Norm%5Cleft%20(%5Cleft(1%20%2B%205*F_%7Burban%7D%20%5Cright)%20%5Ccdot%20%5Cleft(1%20%2B%202*F_%7Bwet-markets%7D%20%5Cright)%20%5Ccdot%20%5Csqrt%7B%5Cdfrac%7BF_%7Bpop-density%7D%7D%7BF_%7BGDP%7D%7D%7D%20%20%5Cright%20)),
+
+where:
+
+ * ![F_{urban}](https://render.githubusercontent.com/render/math?math=F_%7Burban%7D) indicates the nearby presence of urban areas
+ * ![F_{wet-markets}](https://render.githubusercontent.com/render/math?math=F_%7Bwet-markets%7D) indicates the nearby presence of wet markets, which have been identified as hot-spots of disease emergence
+ * ![F_{pop-density}](https://render.githubusercontent.com/render/math?math=F_%7Bpop-density%7D) indicates the local population density, augmenting the importance of the presence of urban areas
+ * ![F_{GDP}](https://render.githubusercontent.com/render/math?math=F_%7BGDP%7D) indicates the local GDP, which has been included as a normalization factor for reporting effort
+
+Then, four distinct drivers of emergence have been modelled from the local convergence of multple individual factors.
+
+ 1. Deforestation in high mammal biodiversity areas: 
+ 
+ ![X_{1} = Norm \left( F_{deforestation} \cdot F_{mammals} \cdot F_{demographic}  \right )                     ](https://render.githubusercontent.com/render/math?math=X_%7B1%7D%20%3D%20Norm%20%5Cleft(%20F_%7Bdeforestation%7D%20%5Ccdot%20F_%7Bmammals%7D%20%5Ccdot%20F_%7Bdemographic%7D%20%20%5Cright%20)%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20)
+
+ 2. Recent expansion of crop and pasture land use:
+
+![X_{2} = Norm \left( F_{treecover} \cdot \left (F_{pastures} + F_{crops}  \right )  \right )                     ](https://render.githubusercontent.com/render/math?math=X_%7B2%7D%20%3D%20Norm%20%5Cleft(%20F_%7Btreecover%7D%20%5Ccdot%20%5Cleft%20(F_%7Bpastures%7D%20%2B%20F_%7Bcrops%7D%20%20%5Cright%20)%20%20%5Cright%20)%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20)
+
+ 3. Interaction between local wilflife and farm animals
+
+![X_{3} = Norm \left( F_{mammals} \cdot F_{pastures} \cdot F_{demographic}  \right )                     ](https://render.githubusercontent.com/render/math?math=X_%7B3%7D%20%3D%20Norm%20%5Cleft(%20F_%7Bmammals%7D%20%5Ccdot%20F_%7Bpastures%7D%20%5Ccdot%20F_%7Bdemographic%7D%20%20%5Cright%20)%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20)
+
+ 4. Major environmental disruptors
+
+![X_{4} = Norm \left( \left (F_{fires} + F_{floods}  \right ) \cdot F_{demographic}  \right )                     ](https://render.githubusercontent.com/render/math?math=X_%7B4%7D%20%3D%20Norm%20%5Cleft(%20%5Cleft%20(F_%7Bfires%7D%20%2B%20F_%7Bfloods%7D%20%20%5Cright%20)%20%5Ccdot%20F_%7Bdemographic%7D%20%20%5Cright%20)%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20)
+
+Each of these drivers of emergence increases the risk of zoonotic disease transmission from mammals to humans. Since a higher local human population also multiplies the chances of any single transmission ocurring, this has been added in the overall EMM risk factor.
+
+![EMM = Norm \left ( \left (X_1 + X_2 + X_3 + X_4  \right ) * F_{pop-density}\right )](https://render.githubusercontent.com/render/math?math=EMM%20%3D%20Norm%20%5Cleft%20(%20%5Cleft%20(X_1%20%2B%20X_2%20%2B%20X_3%20%2B%20X_4%20%20%5Cright%20)%20*%20F_%7Bpop-density%7D%5Cright%20))
+
+The image below shows the preliminary results from this risk factor calculated over the whole surface of the Earth. As we can see, it shows concentrated risk in areas such as the Ganges Basin, Southeast Asia, China, Nigeria, Tanzania, Uganda, Central Europe, and Central America.
+
+![Figure 1](data/processed/factors/zoonotic_factor.jpg)
 
 
 # PANDORA MONITOR
 
 ![Figure 1](img/NASA_005.jpeg)
+
+**Website:** [pandoramonitor.com](https://www.pandoramonitor.com)
 
 # The Team
 
