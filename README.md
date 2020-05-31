@@ -10,6 +10,8 @@ Predict - Protect - Pandora
 
 # Video
 
+[![Watch the video](img/youtube_video.png)](https://youtu.be/YaVTnUdz-U4)
+
 [Pandora Monitor Video](https://youtu.be/YaVTnUdz-U4)
 
 
